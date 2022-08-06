@@ -1,0 +1,373 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 
+* {
+  outline: 1px solid black;
+} */
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.fan {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f6f6f6;
+  padding: 10px 15px;
+}
+.fan img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+.fan li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.fb {
+  padding-right: 5px;
+  border-right: 2px solid #cccccc;
+}
+.tw {
+  padding-left: 5px;
+}
+.fb a {
+  color: #4460a0;
+}
+.tw a {
+  color: #00aaec;
+}
+.fan a:hover {
+  color: red;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+.menu h1 a {
+  width: 244px;
+  height: 50px;
+  display: block;
+  background-image: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png');
+  background-repeat: no-repeat;
+  text-indent: 101%; /*縮排*/
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.menu ul li {
+  padding: 10px 0;
+}
+.menu li a {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #00cc99;
+}
+
+.menu li a:hover {
+  border-bottom: 3px solid #00cc99;
+}
+
+.background {
+  width: 1000px;
+  height: 346px;
+  background: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slogon {
+  width: 1000px;
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.115);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slogon h2 {
+  color: white;
+  font-size: 35px;
+  padding-left: 25px;
+}
+.content {
+  padding: 20px;
+}
+.course {
+  display: flex;
+  justify-content: space-between;
+}
+.course-item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 2px 3px gray;
+}
+
+.course-item p {
+  padding: 0 20px;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+
+.course-item h2 {
+  padding: 5px 0;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.course-item h3 {
+  margin-left: -15px;
+  font-size: 14px;
+}
+
+.item-list {
+  font-size: 14px;
+  width: 250px;
+  list-style: disc;
+  text-align: left;
+}
+.table {
+  margin: 0 auto;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.price {
+  width: 840px;
+  font-size: 16px;
+}
+.price tr {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.price th {
+  background: #f7f7f7;
+  font-weight: bold;
+}
+.price th,
+td {
+  text-align: left;
+  padding: 10px 20px;
+}
+.green {
+  color: #00a67d;
+  font-weight: bold;
+}
+.form {
+  width: 1000px;
+  background: linear-gradient(#00664b, #009972);
+  padding: 30px 0px;
+  color: #fff;
+}
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: bold;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info input {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 0px solid #007659;
+}
+.personal-info label {
+  margin: 5px 0 0 0;
+  display: flex;
+}
+.personal-info .btn {
+  margin-top: 30px;
+  width: 70px;
+  height: 30px;
+  border-radius: 4px;
+  border: 0px solid #00cc99;
+  color: white;
+  background: #00cc99;
+  cursor: pointer;
+}
+.btn:hover {
+  background: white;
+  color: #00cc99;
+}
+.personal-info .btnarea {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.footerlogo h2 a {
+  width: 171px;
+  height: 36px;
+  display: block;
+  background-image: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png');
+  text-indent: 101%; /*縮排*/
+  overflow: hidden;
+  white-space: nowrap;
+}
+.footer-info li {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.footer-info a {
+  color: #e12d80;
+}
+.footer-info a:hover {
+  color: blue;
+}
